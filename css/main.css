@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+a{
+    text-decoration: none;/*altı çizili linkler gidecek*/
+    color: #fff;
+}
+
+html{
+    font-family: "Open Sans", "sans-serif";
+}
+/* Navbar Section */
+#navbar{
+    color:#fff;
+    display: flex;/* metinler yan yana geldi*/
+    justify-content: space-between;/* başlıkları en sağa kaydırdık*/
+    align-items: center;
+    padding: 0 0.7rem;
+    height: 70px;
+    font-size: 16px;
+}
+
+#navbar ul{
+    list-style-type: none;/* başlıkların yanındaki noktaları kaldırır*/
+    display: flex;/* ul içerisindeki metinler yanyana geldi*/
+    align-items: center;
+}
+
+#navbar ul li a{
+    padding: 0.5rem;/* ul içerisindeki başlıklar arasına padding verdik */
+}
+
+#navbar ul li a:hover{
+    background: #336ea2;/* üzerine geldiğimizde rengi değişiyor */
+    border-radius: 8px;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid grey;
+}
+
+#home img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+
+#home .name h2{
+    margin-bottom: 0.75rem;
+}
+
+#home .name p{
+    opacity: 0.85;
+    font-style: italic;
+}
+
+/* Tecrübeler */
+#experiences{
+    color: #fff;
+    padding: 1rem;
+}
+
+#experiences .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#experiences .items .item{
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#experiences .items .item:hover{
+    color:#336ea2;
+    opacity: 0.5;
+}
+
+/* Courses */
+
+#courses{
+    color: #333;
+    padding: 1rem;
+}
+
+.courses{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.courses .course{
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.courses .course .course-image{
+    margin-right: 0.5rem;
+    position: relative;
+}
+
+.courses .course .course-image img{
+    border-radius: 5px;
+}
+
+.courses .course .course-image span{
+    background: red;
+    padding: 0.25rem;
+    color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.courses .course .course-info .title{
+    letter-spacing: 1.2px;
+    font-weight: 900;
+    margin-bottom: 0.25rem;
+}
+
+.courses .course .course-info .description{
+    letter-spacing: 1.2px;
+    margin-bottom: 0.25rem;
+    opacity: 0.75;
+}
+
+.courses .course .course-info .instructor{
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+    opacity: 0.75;
+}
+
+.courses .course .course-info .rating{
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+    opacity: 0.75;
+}
+
+/* Contact */
+
+#contactme{
+    color: #fff;
+    padding: 1rem;
+}
+
+#contactme .contact-form{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactme .contact-form ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+#contactme .contact-form ul li a{
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+#contactme .contact-form ul li a:hover{
+    opacity: 0.7;
+}
